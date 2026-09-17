@@ -1,0 +1,43 @@
+create user alunos with superuser encrypted password 'abc';
+
+
+
+create database pbd with owner=alunos;
+
+CREATE TABLE estados
+
+(    codigoestado integer NOT NULL,
+
+    nomeestado varchar(40) NOT NULL,
+
+    siglaestado varchar(2) NOT NULL,
+
+    CONSTRAINT estados_pk PRIMARY KEY (codigoestado)
+
+);
+
+
+
+create table cidades(
+
+codigocidade int primary key,
+
+nomecidade varchar(40),
+
+codigoestado int,
+
+constraint estado_fk foreign key(codigoestado)
+
+references estados(codigoestado));
+
+
+
+insert into cidades(codigocidade,nomecidade,
+
+codigoestado) values
+
+(1,'Rondonopolis',1),
+
+(2,'Cuiaba',1),
+
+(3,'Curitiba',4)
