@@ -1,0 +1,9 @@
+object Formclientes: TFormclientes
+  Left = 571
+  Height = 240
+  Top = 143
+  Width = 320
+  Caption = 'Formclientes'
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+end

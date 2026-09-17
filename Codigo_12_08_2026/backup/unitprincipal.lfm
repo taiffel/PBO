@@ -1,0 +1,21 @@
+object FormPrincipal: TFormPrincipal
+  Left = 188
+  Height = 277
+  Top = 96
+  Width = 520
+  Caption = 'Implementação de Interfaces'
+  DesignTimePPI = 120
+  Menu = MenuPrincipal
+  LCLVersion = '4.0.0.4'
+  object MenuPrincipal: TMainMenu
+    Left = 104
+    Top = 40
+    object MenuItem1: TMenuItem
+      Caption = 'Opções'
+      object MenuItem2: TMenuItem
+        Caption = 'Manipulação de Listas'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+end

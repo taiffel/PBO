@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="projetoRevisao.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formprincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="35"/>
+        <CursorPos X="44" Y="37"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formclientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="3" Y="19"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formprodutos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <CursorPos Y="6"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitvendas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formvendas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="101"/>
+        <CursorPos X="69" Y="110"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="21">
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="3" Column="27"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="41" Column="5" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="46" Column="8" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="57" Column="8" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="67" Column="13" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="68" Column="13" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="67" Column="13" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="3" Column="23"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="7" Column="41"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="55" Column="36" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="86" Column="27" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="87" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="89" Column="31" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="75" Column="21" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="84" Column="23" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="85" Column="23" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="84" Column="19" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="75" Column="17" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="83" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="90" Column="2" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="93" Column="22" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="unitvendas.pas"/>
+        <Caret Line="111" Column="2" TopLine="102"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,383 @@
+object Formvendas: TFormvendas
+  Left = 540
+  Height = 356
+  Top = 159
+  Width = 703
+  Caption = 'Formvendas'
+  ClientHeight = 356
+  ClientWidth = 703
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+  object DBGridVendas: TDBGrid
+    Left = 16
+    Height = 160
+    Top = 8
+    Width = 664
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'quantidade'
+        Width = 200
+        FieldName = 'quantidade'
+      end    
+      item
+        Title.Caption = 'data_venda'
+        Width = 200
+        FieldName = 'data_venda'
+      end    
+      item
+        Title.Caption = 'valor_total'
+        Width = 200
+        FieldName = 'valor_total'
+      end>
+    DataSource = DataSourceVendas
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 0
+  end
+  object GrupoDados: TGroupBox
+    Left = 16
+    Height = 96
+    Top = 176
+    Width = 664
+    Caption = ' Dados '
+    ClientHeight = 71
+    ClientWidth = 660
+    Enabled = False
+    TabOrder = 1
+    object DBEdit1: TDBEdit
+      Left = 13
+      Height = 28
+      Top = 28
+      Width = 68
+      DataField = 'quantidade'
+      DataSource = DataSourceVendas
+      Alignment = taRightJustify
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 104
+      Height = 28
+      Top = 28
+      Width = 100
+      DataField = 'data_venda'
+      DataSource = DataSourceVendas
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 216
+      Height = 28
+      Top = 28
+      Width = 100
+      DataField = 'valor_total'
+      DataSource = DataSourceVendas
+      Alignment = taRightJustify
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 20
+      Top = 6
+      Width = 78
+      Caption = 'Quantidade'
+    end
+    object Label2: TLabel
+      Left = 104
+      Height = 20
+      Top = 6
+      Width = 77
+      Caption = 'Data Venda'
+    end
+    object Label3: TLabel
+      Left = 216
+      Height = 20
+      Top = 4
+      Width = 71
+      Caption = 'Valor Total'
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 336
+      Height = 28
+      Top = 28
+      Width = 149
+      DataField = 'id_cliente'
+      DataSource = DataSourceVendas
+      KeyField = 'id_cliente'
+      ListField = 'nome'
+      ListFieldIndex = 0
+      ListSource = DataSourceClientes
+      LookupCache = False
+      TabOrder = 3
+    end
+    object DBLookupComboBox2: TDBLookupComboBox
+      Left = 504
+      Height = 28
+      Top = 28
+      Width = 141
+      DataField = 'id_produto'
+      DataSource = DataSourceVendas
+      KeyField = 'id_produto'
+      ListField = 'nome'
+      ListFieldIndex = 0
+      ListSource = DataSourceProdutos
+      LookupCache = False
+      TabOrder = 4
+    end
+    object Label4: TLabel
+      Left = 336
+      Height = 20
+      Top = 4
+      Width = 46
+      Caption = 'Cliente'
+    end
+    object Label5: TLabel
+      Left = 504
+      Height = 20
+      Top = 4
+      Width = 53
+      Caption = 'Produto'
+    end
+  end
+  object BotaoInserir: TSpeedButton
+    Left = 16
+    Height = 34
+    Top = 304
+    Width = 93
+    Caption = 'Inserir'
+    OnClick = BotaoInserirClick
+  end
+  object BotaoAlterar: TSpeedButton
+    Left = 130
+    Height = 34
+    Top = 304
+    Width = 93
+    Caption = 'Alterar'
+    OnClick = BotaoAlterarClick
+  end
+  object BotaoExcluir: TSpeedButton
+    Left = 240
+    Height = 34
+    Top = 304
+    Width = 93
+    Caption = 'Excluir'
+    OnClick = BotaoExcluirClick
+  end
+  object BotaoConfirmar: TSpeedButton
+    Left = 358
+    Height = 34
+    Top = 304
+    Width = 93
+    Caption = 'Confirmar'
+    Enabled = False
+    OnClick = BotaoConfirmarClick
+  end
+  object BotaoCancelar: TSpeedButton
+    Left = 472
+    Height = 34
+    Top = 304
+    Width = 93
+    Caption = 'Cancelar'
+    Enabled = False
+    OnClick = BotaoCancelarClick
+  end
+  object BotaoSair: TSpeedButton
+    Left = 586
+    Height = 34
+    Top = 304
+    Width = 93
+    Caption = 'Sair'
+    OnClick = BotaoSairClick
+  end
+  object QueryVendas: TZQuery
+    Connection = Formprincipal.conn1
+    UpdateObject = UpdateSQLVendas
+    SQL.Strings = (
+      'select * from vendas'
+    )
+    Params = <>
+    Left = 256
+    Top = 104
+    object QueryVendasid_venda: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id_venda'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object QueryVendasid_cliente: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QueryVendasid_produto: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id_produto'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QueryVendasquantidade: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'quantidade'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QueryVendasdata_venda: TZDateField
+      FieldKind = fkData
+      FieldName = 'data_venda'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QueryVendasvalor_total: TZBCDField
+      FieldKind = fkData
+      FieldName = 'valor_total'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 10
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+  end
+  object DataSourceVendas: TDataSource
+    DataSet = QueryVendas
+    Left = 384
+    Top = 112
+  end
+  object UpdateSQLVendas: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM vendas'
+      'WHERE'
+      '  ((vendas.id_venda IS NULL AND :OLD_id_venda IS NULL) OR (vendas.id_venda = :OLD_id_venda))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO vendas'
+      '  (id_venda, id_cliente, id_produto, quantidade, data_venda, valor_total)'
+      'VALUES'
+      '  (:id_venda, :id_cliente, :id_produto, :quantidade, :data_venda, :valor_total)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE vendas SET'
+      '  id_venda = :id_venda,'
+      '  id_cliente = :id_cliente,'
+      '  id_produto = :id_produto,'
+      '  quantidade = :quantidade,'
+      '  data_venda = :data_venda,'
+      '  valor_total = :valor_total'
+      'WHERE'
+      '  ((vendas.id_venda IS NULL AND :OLD_id_venda IS NULL) OR (vendas.id_venda = :OLD_id_venda))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 128
+    Top = 96
+    ParamData = <    
+      item
+        Name = 'id_venda'
+      end    
+      item
+        Name = 'id_cliente'
+      end    
+      item
+        Name = 'id_produto'
+      end    
+      item
+        Name = 'quantidade'
+      end    
+      item
+        Name = 'data_venda'
+      end    
+      item
+        Name = 'valor_total'
+      end    
+      item
+        Name = 'OLD_id_venda'
+      end>
+  end
+  object QueryClientes: TZQuery
+    Connection = Formprincipal.conn1
+    SQL.Strings = (
+      'select * from clientes'
+    )
+    Params = <>
+    Left = 577
+    Top = 8
+    object QueryClientesid_cliente: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id_cliente'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object QueryClientesnome: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+  end
+  object QueryProdutos: TZQuery
+    Connection = Formprincipal.conn1
+    SQL.Strings = (
+      'select * from produtos'
+    )
+    Params = <>
+    Left = 432
+    Top = 240
+    object QueryProdutosid_produto: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id_produto'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object QueryProdutosnome: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 40
+    end
+  end
+  object DataSourceClientes: TDataSource
+    DataSet = QueryClientes
+    Left = 576
+    Top = 72
+  end
+  object DataSourceProdutos: TDataSource
+    DataSet = QueryProdutos
+    Left = 576
+    Top = 240
+  end
+end

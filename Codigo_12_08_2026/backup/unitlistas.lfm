@@ -1,0 +1,84 @@
+object FormListas: TFormListas
+  Left = 551
+  Height = 304
+  Top = 124
+  Width = 529
+  Caption = 'Manipulação de Listas'
+  ClientHeight = 304
+  ClientWidth = 529
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+  object Lista1: TListBox
+    Left = 16
+    Height = 224
+    Top = 8
+    Width = 173
+    Items.Strings = (
+      'Programação'
+      'Web'
+      'Banco de Dados'
+      'Mineração de Dados'
+    )
+    ItemHeight = 20
+    TabOrder = 0
+  end
+  object Lista2: TListBox
+    Left = 336
+    Height = 224
+    Top = 8
+    Width = 173
+    Items.Strings = (
+      'Algoritmos'
+      'Estrutura de Dados'
+      'Engenharia de Software'
+      'Redes de Computadores'
+    )
+    ItemHeight = 20
+    TabOrder = 1
+  end
+  object BotaoMover12: TButton
+    Left = 208
+    Height = 36
+    Top = 8
+    Width = 118
+    Caption = 'Mover ->'
+    TabOrder = 2
+    OnClick = BotaoMover12Click
+  end
+  object BotaoMover21: TButton
+    Left = 208
+    Height = 36
+    Top = 54
+    Width = 118
+    Caption = '<- Mover'
+    TabOrder = 3
+    OnClick = BotaoMover21Click
+  end
+  object BotaoCopiar12: TButton
+    Left = 208
+    Height = 36
+    Top = 150
+    Width = 118
+    Caption = 'Copiar Linhas ->'
+    TabOrder = 4
+    OnClick = BotaoCopiar12Click
+  end
+  object BotaoCopiar21: TButton
+    Left = 208
+    Height = 36
+    Top = 196
+    Width = 118
+    Caption = '<- Copiar Linhas'
+    TabOrder = 5
+    OnClick = BotaoCopiar21Click
+  end
+  object BotaoSair: TButton
+    Left = 415
+    Height = 31
+    Top = 256
+    Width = 94
+    Caption = 'Sair'
+    TabOrder = 6
+    OnClick = BotaoSairClick
+  end
+end

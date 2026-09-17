@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="projetointerface.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPrincipal"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="25"/>
+        <CursorPos X="23" Y="42"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitlistas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormListas"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="66"/>
+        <CursorPos Y="74"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="25">
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="2" Column="59"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="39" Column="5" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="30" Column="27" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="19" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="23" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="24" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="25" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="26" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="27" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="28" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="30" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="20" Column="70" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="21" Column="70" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="23" Column="70" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="25" Column="11" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="48" Column="41" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="49" Column="15" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="56" Column="15" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="58" Column="36" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="59" Column="36" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="56" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="55" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="54" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="57" Column="42" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="64" Column="41" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitlistas.pas"/>
+        <Caret Line="49" TopLine="46"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
