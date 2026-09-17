@@ -1,0 +1,41 @@
+object FormPrincipal: TFormPrincipal
+  Left = 403
+  Height = 284
+  Top = 50
+  Width = 567
+  Caption = 'FormPrincipal'
+  DesignTimePPI = 120
+  Menu = MenuPrincipal
+  LCLVersion = '4.0.0.4'
+  object MenuPrincipal: TMainMenu
+    Left = 400
+    Top = 48
+    object MenuItem1: TMenuItem
+      Caption = 'Manutenção'
+      object MenuItem2: TMenuItem
+        Caption = 'Estados'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Cidades'
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+  object Conn_PBD: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP'
+    )
+    Connected = True
+    DisableSavepoints = False
+    HostName = 'localhost'
+    Port = 5432
+    Database = 'pbd'
+    User = 'alunos'
+    Password = 'abc'
+    Protocol = 'postgresql'
+    Left = 160
+    Top = 32
+  end
+end

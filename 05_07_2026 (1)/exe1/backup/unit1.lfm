@@ -1,0 +1,48 @@
+object Form1: TForm1
+  Left = 454
+  Height = 200
+  Top = 77
+  Width = 467
+  Caption = 'Programação com Banco de Dados'
+  ClientHeight = 200
+  ClientWidth = 467
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+  object Button1: TButton
+    Left = 240
+    Height = 47
+    Top = 48
+    Width = 128
+    Caption = 'Comparar'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 28
+    Top = 32
+    Width = 145
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 40
+    Height = 28
+    Top = 98
+    Width = 145
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 41
+    Height = 20
+    Top = 8
+    Width = 96
+    Caption = 'Primeiro Texto'
+  end
+  object Label2: TLabel
+    Left = 41
+    Height = 20
+    Top = 75
+    Width = 99
+    Caption = 'Segundo Texto'
+  end
+end

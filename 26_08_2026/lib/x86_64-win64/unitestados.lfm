@@ -1,0 +1,195 @@
+object FormEstados: TFormEstados
+  Left = 162
+  Height = 351
+  Top = 58
+  Width = 568
+  Caption = 'Estados'
+  ClientHeight = 351
+  ClientWidth = 568
+  DesignTimePPI = 120
+  LCLVersion = '4.0.0.4'
+  OnShow = FormShow
+  object DBGridDados: TDBGrid
+    Left = 24
+    Height = 176
+    Top = 16
+    Width = 532
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'Código'
+        Width = 80
+        FieldName = 'codigoestado'
+      end    
+      item
+        Title.Caption = 'Nome do Estado'
+        Width = 300
+        FieldName = 'nomeestado'
+      end    
+      item
+        Title.Caption = 'Sigla'
+        Width = 70
+        FieldName = 'siglaestado'
+      end>
+    DataSource = DataSourceEstados
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 0
+  end
+  object GrupoDados: TGroupBox
+    Left = 24
+    Height = 88
+    Top = 200
+    Width = 532
+    Caption = 'GrupoDados'
+    ClientHeight = 63
+    ClientWidth = 528
+    Enabled = False
+    TabOrder = 1
+    object DBEdit1: TDBEdit
+      Left = 8
+      Height = 28
+      Top = 22
+      Width = 100
+      DataField = 'codigoestado'
+      DataSource = DataSourceEstados
+      Alignment = taRightJustify
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 136
+      Height = 28
+      Top = 22
+      Width = 288
+      DataField = 'nomeestado'
+      DataSource = DataSourceEstados
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 440
+      Height = 28
+      Top = 22
+      Width = 64
+      DataField = 'siglaestado'
+      DataSource = DataSourceEstados
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 20
+      Top = 2
+      Width = 49
+      Caption = 'Código'
+    end
+    object Label2: TLabel
+      Left = 136
+      Height = 20
+      Top = 2
+      Width = 41
+      Caption = 'Nome'
+    end
+    object Label3: TLabel
+      Left = 440
+      Height = 20
+      Top = 2
+      Width = 33
+      Caption = 'Sigla'
+    end
+  end
+  object BotaoInserir: TSpeedButton
+    Left = 8
+    Height = 35
+    Top = 303
+    Width = 88
+    Caption = 'Inserir'
+    OnClick = BotaoInserirClick
+  end
+  object BotaoAlterar: TSpeedButton
+    Left = 100
+    Height = 35
+    Top = 303
+    Width = 88
+    Caption = 'Alterar'
+    OnClick = BotaoAlterarClick
+  end
+  object BotaoExcluir: TSpeedButton
+    Left = 192
+    Height = 35
+    Top = 303
+    Width = 88
+    Caption = 'Excluir'
+    OnClick = BotaoExcluirClick
+  end
+  object BotaoConfirmar: TSpeedButton
+    Left = 284
+    Height = 35
+    Top = 303
+    Width = 88
+    Caption = 'Confirmar'
+    Enabled = False
+    OnClick = BotaoConfirmarClick
+  end
+  object BotaoCancelar: TSpeedButton
+    Left = 376
+    Height = 35
+    Top = 303
+    Width = 88
+    Caption = 'Cancelar'
+    Enabled = False
+    OnClick = BotaoCancelarClick
+  end
+  object BotaoSair: TSpeedButton
+    Left = 468
+    Height = 35
+    Top = 303
+    Width = 88
+    Caption = 'Sair'
+    OnClick = BotaoSairClick
+  end
+  object QueryEstados: TZQuery
+    Connection = FormPrincipal.Conn_PBD
+    SQL.Strings = (
+      'select * from estados'
+    )
+    Params = <>
+    Left = 328
+    Top = 40
+    object QueryEstadoscodigoestado: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'codigoestado'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QueryEstadosnomeestado: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nomeestado'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 40
+    end
+    object QueryEstadossiglaestado: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'siglaestado'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 2
+    end
+  end
+  object DataSourceEstados: TDataSource
+    DataSet = QueryEstados
+    Left = 328
+    Top = 120
+  end
+end
